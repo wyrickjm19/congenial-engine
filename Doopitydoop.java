@@ -1,17 +1,16 @@
-package packag;
-import java.util.scanner;
+package myPackage;
+import java.util.Scanner;
 public class Doopitydoop {
-
     
     public void main() {
-        Scanner in = new Scanner(System.out);
-        System.out.println("Enter your name");
-        String name = in.nextLine();
-        String eman = "";
-        for(int i = name.length() - 1; i = 0; i++) {
-           name += eman.charAt(i);
+        Scanner console = new Scanner(System.in);
+        System.out.println("Enter your name:");
+        String name = console.nextLine();
+        String reversedName = "";
+        for(int i = 0; i < name.length(); i++) {
+           reversedName = name.charAt(i) + reversedName;
         }
-        System.out.println(eman);        
+        System.out.println(reversedName);
     }
     
 }
