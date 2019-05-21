@@ -2,7 +2,7 @@ package myPackage;
 import java.util.Scanner;
 public class Doopitydoop {
     
-    public void main() {
+    public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Enter your name:");
         String name = console.nextLine();
